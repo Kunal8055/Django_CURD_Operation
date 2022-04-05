@@ -1,0 +1,13 @@
+body
+{
+    background-color: lightgray;
+}
+#head
+{
+    text-align: center;
+    max-width: 79%;
+    margin-left: 9%;
+    padding: 0.5%;
+    background-color: wheat;
+    
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE htm
+ {% Load static%}                                                                   
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'show.css' %}">
+    <title>show Data</title>
+
+</head>
+<body>  
+    {{msg}}
+    <h2 id="head">Library management system</h2>
+    <div id="SecondDiv">
+        <form action="/">
+            <input type="Submit" value="Back">
+
+        </form>
+    </div>
+    <div id="OneDiv">
+        <table>
+            <thead>
+                <th>Id</th>
+                <th>Book</th>
+                <th>Button</th>
+
+            </thead>
+            {% for d in data %}
+            <tr>
+                <td>{{d.ID}}</td>
+                <td>{{d.Book}}</td>
+                <td>
+                    <a href="/edit?id={{d.ID}} ">Edit</a>
+                    <a href="/delete?id={{d.ID}} ">Delete></a>
+                </td>
+                
+        </table>
+
+    </div>
+</body>
+</html>

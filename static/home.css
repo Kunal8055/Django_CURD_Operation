@@ -1,0 +1,26 @@
+body
+{
+    background-color: lightgray;
+}
+#DivOne
+{
+    background-color: white;
+    max-width:fit-content;
+    padding: 1%;
+    margin-left: 39%;
+    margin-top: 14%;
+}    
+#btn
+{
+      margin-left: 35%;
+
+}
+#DivTwo
+{
+    margin-left: 87%;
+
+}
+#id
+{
+    margin-left: 13.7%;
+}
